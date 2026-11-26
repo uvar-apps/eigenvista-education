@@ -1,0 +1,25 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:09.286
+Use bohr coordinates, an XY plane through the origin, and a 4 by 4 bohr
+
+00:00:09.286 --> 00:00:13.000
+section with 81 by 81 samples.
+
+00:00:13.000 --> 00:00:20.000
+Use a fixed range from minus 0.45 to plus 0.45. The zero contour separates
+
+00:00:20.000 --> 00:00:22.000
+negative and positive values.
+
+00:00:22.000 --> 00:00:28.217
+The signed contour image and plane CSV describe the same section. The profile
+
+00:00:28.217 --> 00:00:33.000
+runs along x from minus four to plus four bohr.
+
+00:00:33.000 --> 00:00:39.600
+The profile has 81 rows and covers 4.2334 angstroms. Both endpoints are
+
+00:00:39.600 --> 00:00:44.000
+outside the grid and have blank value cells.

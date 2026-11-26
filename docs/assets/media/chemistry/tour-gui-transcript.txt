@@ -1,0 +1,19 @@
+Chemistry and biomolecules in the GUI
+
+Take a first measurement
+Start with the packaged water X Y Z file. In Molecular data, check for three atoms and two display bonds. In Selections and measurements, select the first two atoms and use Geometry measurements to add an oxygen to hydrogen distance.
+
+Read the geometry table
+Select hydrogen, oxygen, hydrogen in that order and add an angle. Oxygen is the vertex. The distance is about zero point nine five seven angstroms. The angle is about one hundred four point four six degrees. Export the measurement table and a figure to document the result.
+
+Inspect the deposited assembly
+Open the one A O N structure and switch to protein cartoon. Select chain coloring to distinguish deposited copies. Switch to entity coloring to group copies that share an entity. Use the chain controls to isolate and frame a copy, or the component controls to show ligands as ball and stick.
+
+Locate a ligand by identity
+Open ligands and neighborhoods to find a specific copy. Here A D P chain A residue one is the deposited author identity. Start each four angstrom search from that one ligand. The second search includes full residues, so it shows more of the local context.
+
+Generate a molecular surface
+Back in water, open Molecular surfaces. Build an excluded surface from all three atoms. Use Bondi Mantina radii, a one point four angstrom probe, and a quarter angstrom grid. Compare the settings before generating the accessible surface. Save both so you can switch views without recalculating.
+
+Keep the scientific outputs
+Finish with an image that shows the result, a measurement table with units, and a native file for future editing. This one A O N figure records the local contact as a geometric distance. Keep its source identifiers and view settings with the figure.

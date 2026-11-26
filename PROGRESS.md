@@ -54,3 +54,22 @@ guide](docs/setup.md). The local TiO₆ example is an idealized educational inpu
 - Applied CC BY 4.0 to the original tutorials and teaching examples. Added
   the legal text to [LICENSE](LICENSE), attribution guidance to the README and
   homepage, and a license link to the site footer.
+
+### Illustrated tutorials and worked results
+
+- Added visual examples to all 20 tutorials. The four tours have English
+  narration, captions, chapters, and transcripts. The eight workflow demos
+  show both the GUI and AI connector paths. Four separate animations explain
+  orbital phase, cube interpolation, ligand selection, and solvent surfaces.
+- Both lessons for each workflow show how to produce a downloadable result.
+  The result sets include matched orbital and protein PNGs, field samples and
+  measurements as CSV, a mapped electrostatic potential figure, and matched
+  SES and SAS figures. The released 0.10.6 Mac app produced the scientific
+  exports. A release-matching Chromium build supplied the GUI and controller
+  replay footage.
+- The frontier-orbital and ligand pilots passed desktop and phone checks in
+  Chromium and WebKit, including chapter seeks and PNG and CSV downloads.
+  [Media sources and build guide](tools/media/README.md).
+- Staging passed all 132 Chromium and WebKit route and viewport checks,
+  including play, pause, seek, caption loading, chapter controls, result
+  downloads, transcripts, and search.

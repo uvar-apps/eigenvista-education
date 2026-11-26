@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:09.000
+Find ADP A:1 in the 1AON ligand list. Check for 27 seed atoms.
+
+00:00:09.000 --> 00:00:15.632
+Repeat the 4 Å query from the original ligand. Atom centers give 74 hits.
+
+00:00:15.632 --> 00:00:18.000
+Whole-residue expansion gives 154 atoms.
+
+00:00:18.000 --> 00:00:25.412
+The connector resolved author A:1, label chain W, and used the same 27 seeds
+
+00:00:25.412 --> 00:00:27.000
+for both runs.
+
+00:00:27.000 --> 00:00:36.000
+Check the 2.546 Å monitor, then save the annotated PNG and measurement CSV.

@@ -1,0 +1,13 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.000
+Find atoms within 4 Å of any of the 27 atoms in ADP A:1.
+
+00:00:04.000 --> 00:00:08.300
+The 1AON distance selection contains 74 atoms including the ADP seeds.
+
+00:00:08.300 --> 00:00:12.000
+Complete residues adds each matched residue’s remaining atoms.
+
+00:00:12.000 --> 00:00:16.000
+The expanded selection contains 154 atoms across 21 residues.

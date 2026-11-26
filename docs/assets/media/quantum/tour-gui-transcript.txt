@@ -1,0 +1,28 @@
+Quantum chemistry in the EigenVista GUI
+
+Start with calculated water
+Open the supplied Molden file for water and check Molecular data. It contains three atoms, twenty-four basis functions, and twenty-four spatial orbitals. Open Provenance when you need to record how EigenVista interpreted the imported calculation.
+
+Read occupation before choosing a field
+Under Quantum fields, browse the orbitals. Compare the occupation and energy columns. Orbital five is the highest occupied orbital and orbital six is the lowest unoccupied orbital. Choose orbital five for the rest of this exercise.
+
+Compare the preview modes
+In Field rendering, set the isovalue magnitude to zero point zero three and the grid to sixty-four samples along each axis. Compare the sampled raycast and volume previews. Grid resolution controls the spatial samples, while the sampling quality control changes the display rays.
+
+Generate and inspect both signs
+Generate the two signed meshes and wait for them to finish. Enable the field rendering key before you export. It tells you which orbital the colors describe, the two signed levels, and the amplitude unit.
+
+Cancel a replacement calculation
+Here is a longer calculation on the bicyclic example. We start a finer replacement so there is time to see the phase and elapsed time. Cancel this calculation while it runs, then check Saved surfaces. The four finished meshes from the previous calculation are still available.
+
+Measure and export the bond profile
+Select the oxygen and first hydrogen in that order. Measure the bond, then use those same atoms as the endpoints of a sixty-five-sample line profile on orbital five. The segment is about zero point nine five eight angstroms long. Export the sample table with scalar values in bohr to the negative three halves.
+
+Compare density and coordinate-derived shape
+Generate the total electron density shell at zero point zero five electrons per cubic bohr. Then build a solvent-accessible surface with a one point four angstrom probe. Compare the outlines. One surface is computed from the electronic field and the other from atom positions and radii.
+
+Clip the shell and retain export settings
+Choose Surface shader under Appearance and load the clipping files. Apply the shader to the density shell. Adjust the x maximum uniform to reveal the framework. Save the shader parameters with the figure when you need to reproduce the visible cutaway.
+
+Convert inputs without replacing the scene
+Finally, open Convert files and add the Molden and cube examples. Run the batch, check the outcome for each row, then use Save on the converted rows you want to keep. For the scientific record, retain the original calculation, the exported image and tables, and the native document.

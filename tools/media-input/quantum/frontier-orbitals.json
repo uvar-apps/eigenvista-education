@@ -1,0 +1,38 @@
+{
+  "title": "Compare frontier orbitals",
+  "kind": "workflow",
+  "scenes": [
+    {
+      "mode": "GUI",
+      "title": "Select MO 26 and MO 27",
+      "caption": "In Orbitals, check rows 26 and 27. Set the isovalue magnitude to 0.03 and the grid to 128³, then generate both fields together.",
+      "image": "docs/assets/media/quantum/frontier-orbital-table.webp",
+      "seconds": 14,
+      "video": "tools/media-input/quantum/captures/frontier-selection.webm"
+    },
+    {
+      "mode": "GUI",
+      "title": "Inspect the four signed meshes",
+      "caption": "Saved surfaces lists one positive and one negative level for each orbital. Use the eye controls to show only one orbital at a time.",
+      "image": "docs/assets/media/quantum/frontier-saved-meshes.webp",
+      "seconds": 9
+    },
+    {
+      "mode": "AI connector",
+      "title": "Ask for matched exports",
+      "caption": "This HOMO export uses levels of −0.03 and +0.03 per bohr to the three halves. Keep the same camera and image dimensions for the LUMO.",
+      "image": "docs/assets/media/quantum/c7h10-homo-128.webp",
+      "seconds": 11,
+      "prompt": "Find the HOMO and LUMO. Generate both signed pairs at 128 samples per axis and export each orbital from the same camera.",
+      "video": "tools/media-input/quantum/captures/frontier-connector.webm"
+    },
+    {
+      "mode": "AI connector",
+      "title": "Check the LUMO and keep the comparison",
+      "caption": "Select the LUMO and refresh the rendering key before the second PNG. The four-row comparison CSV records both signed levels and the actual triangle counts.",
+      "image": "docs/assets/media/quantum/c7h10-lumo-128.webp",
+      "seconds": 11,
+      "prompt": "Verify both PNGs and write a CSV with one row per mesh, its orbital ID, energy, occupation, isovalue and triangle count."
+    }
+  ]
+}

@@ -2,6 +2,15 @@
 
 Use a synthetic 7³ cube to check sampling, units and exported missing values before working with an unfamiliar scientific grid. Run the following prompts through an EigenVista 0.10.6 connector session. [Set up EigenVista](../../setup.md) · [Quantum agent tour](../agent.md) · [GUI version](quantitative-cube-gui.md)
 
+<figure class="tutorial-media">
+  <video controls playsinline preload="none" width="1600" height="900" poster="../../../assets/media/quantum/signed-affine-plane.webp" data-kind="workflow" aria-label="Cube section and line profile workflow video">
+    <source src="../../../assets/media/quantum/quantitative-cube.mp4" type="video/mp4">
+    <track kind="captions" src="../../../assets/media/quantum/quantitative-cube.vtt" srclang="en" label="English" default>
+    <track kind="chapters" src="../../../assets/media/quantum/quantitative-cube-chapters.vtt" srclang="en" label="Chapters">
+  </video>
+  <figcaption>Use the AI connector chapter to see the expected section and sample-table checks.</figcaption>
+</figure>
+
 ## Load the grid and sample a known location
 
 ```text
@@ -32,6 +41,20 @@ x = -1, 0 and +1 bohr, and the status of each endpoint.
 The center value is close to zero. At **−1** and **+1 bohr** expect approximately **−0.3972682430** and **+0.3972682430**. Both segment endpoints are outside and should have null samples in the connector or blank scalar cells in CSV. The complete segment is approximately **4.2334 Å** long. Connector world vectors use bohr and CSV coordinates use Å. The field's scalar unit stays unspecified.
 
 For scrutiny of the agent's work, `analysis.create` uses a plane origin of **(−2, −2, 0)** and full spans **(4, 0, 0)** and **(0, 4, 0)** in bohr. `analysis.samples` supplies paged source samples and status. Use `table.export` with the particular analysis ID to retain each CSV. [Connector schemas and units](https://uvar-apps.github.io/eigenvista/downloads/eigenvista-control/reference.md)
+
+### Worked results
+
+[![Native EigenVista export of the signed plane over the two-atom fixture, with contours and a fixed numeric scale](../../assets/media/quantum/signed-affine-plane.webp)](../../assets/media/quantum/results/signed-affine-plane.png)
+
+Use these verified 0.10.6 results to check your agent’s files. Look for 6,561 plane samples, 81 profile samples, and an outside status with an empty value at both ends of the profile. [Download plane PNG](../../assets/media/quantum/results/signed-affine-plane.png){ download } · [Download plane CSV](../../assets/media/quantum/results/signed-affine-plane.csv){ download } · [Download profile CSV](../../assets/media/quantum/results/signed-affine-profile.csv){ download }.
+
+<figure class="tutorial-media">
+  <video controls playsinline preload="none" width="1280" height="720" poster="../../../assets/media/concepts/cube-interpolation.webp" data-kind="concept" aria-label="Trilinear cube interpolation">
+    <source src="../../../assets/media/concepts/cube-interpolation.mp4" type="video/mp4">
+    <track kind="captions" src="../../../assets/media/concepts/cube-interpolation.vtt" srclang="en" label="English" default>
+  </video>
+  <figcaption>Follow one sample through the eight neighboring grid values. Outside the finite grid, the sample has an outside status.</figcaption>
+</figure>
 
 ## Preserve and transfer the workflow
 

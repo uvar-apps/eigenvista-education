@@ -1,0 +1,5 @@
+orbital,field_id,occupation,energy_hartree,isovalue_bohr_minus_3_over_2,grid_samples_per_axis,triangle_count
+HOMO,molden-mo-26,2,-0.20945781051103,-0.03,128,9412
+HOMO,molden-mo-26,2,-0.20945781051103,0.03,128,9324
+LUMO,molden-mo-27,0,-0.022452121682877,-0.03,128,9132
+LUMO,molden-mo-27,0,-0.022452121682877,0.03,128,9144

@@ -1,0 +1,39 @@
+{
+  "title": "Compare crambin SES and SAS",
+  "kind": "workflow",
+  "scenes": [
+    {
+      "mode": "GUI",
+      "title": "Set identical solvent inputs",
+      "caption": "Use all 327 source atoms, Bondi / Mantina radii, a 1.4 Å probe, and 0.5 Å spacing.",
+      "image": "docs/assets/media/chemistry/stills/solvent-ses-controls.webp",
+      "seconds": 8,
+      "video": "tools/media-input/chemistry/captures/solvent-gui.webm",
+      "videoStart": 0.75
+    },
+    {
+      "mode": "GUI",
+      "title": "Read the accepted meshes",
+      "caption": "Expect 27,608 SES triangles and 34,724 SAS triangles. Export one mesh at a time.",
+      "image": "docs/assets/media/chemistry/stills/solvent-sas-controls.webp",
+      "seconds": 8
+    },
+    {
+      "mode": "AI connector",
+      "title": "Ask for both calculations",
+      "caption": "Run separate jobs and verify the accepted settings and mesh counts.",
+      "image": "docs/assets/media/chemistry/stills/solvent-sas-controls.webp",
+      "seconds": 9,
+      "video": "tools/media-input/chemistry/captures/solvent-ai.webm",
+      "prompt": "Generate SES and SAS from the same atoms with the same radii, probe, and grid. Wait for both jobs and read back their mesh counts.",
+      "videoStart": 0.75
+    },
+    {
+      "mode": "AI connector",
+      "title": "Save a matched pair",
+      "caption": "Switch only the visible surface. Keep the camera and style fixed for the two PNG exports.",
+      "image": "docs/assets/media/chemistry/results/1crn-sas.png",
+      "seconds": 9
+    }
+  ]
+}

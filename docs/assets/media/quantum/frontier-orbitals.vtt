@@ -1,0 +1,28 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:09.130
+In Orbitals, check rows 26 and 27. Set the isovalue magnitude to 0.03 and the
+
+00:00:09.130 --> 00:00:14.000
+grid to 128³, then generate both fields together.
+
+00:00:14.000 --> 00:00:19.281
+Saved surfaces lists one positive and one negative level for each orbital. Use
+
+00:00:19.281 --> 00:00:23.750
+the eye controls to show only one orbital at a time.
+
+00:00:23.750 --> 00:00:30.350
+This HOMO export uses levels of −0.03 and +0.03 per bohr to the three halves.
+
+00:00:30.350 --> 00:00:34.750
+Keep the same camera and image dimensions for the LUMO.
+
+00:00:34.750 --> 00:00:40.470
+Select the LUMO and refresh the rendering key before the second PNG. The
+
+00:00:40.470 --> 00:00:45.310
+four-row comparison CSV records both signed levels and the actual triangle
+
+00:00:45.310 --> 00:00:45.750
+counts.

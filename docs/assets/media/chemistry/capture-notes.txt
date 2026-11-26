@@ -1,0 +1,58 @@
+EigenVista chemistry media
+
+The workflow PNG and CSV downloads were exported by the Apple Silicon
+EigenVista 0.10.6 desktop release through its bundled connector. The GUI
+captures and controller replays show the upstream EigenVista production
+browser build at 1520 × 900 in Chromium. The browser replays use the same
+application controller as the desktop connector. Capture sources and the
+scene plans are in tools/media-input/chemistry of the education repository.
+
+Reference releases and sources
+
+EigenVista 0.10.6 desktop release
+https://github.com/uvar-apps/eigenvista/releases/tag/v0.10.6
+
+EigenVista checkout used for the production browser build and inputs
+ec70d078ed6e98b65271ab61b14d99bb2ccde3c7
+https://github.com/uvar-apps/eigenvista/tree/ec70d078ed6e98b65271ab61b14d99bb2ccde3c7
+
+1AON text mmCIF from the EigenVista sample
+https://uvar-apps.github.io/eigenvista/downloads/1AON.cif
+https://www.rcsb.org/structure/1AON
+SHA-256 6b202f340ffb9a1924d5315ce9e837e02cee1dbd745df675be76f6d4e1b8e66f
+
+1CRN BinaryCIF from the EigenVista fixture
+https://github.com/uvar-apps/eigenvista/tree/v0.10.6/fixtures/bcif
+https://www.rcsb.org/structure/1CRN
+SHA-256 9b0b12f855cbe1ec15b45d893e28c8f22cf4a616565474dae85d69af30648d86
+
+Water XYZ example
+https://uvar-apps.github.io/eigenvista/downloads/water.xyz
+SHA-256 abb3610c58346a9c7fc9da67518ae3ca16e5e733b444d422fe2f431da3618f6d
+
+Idealized TiO6 teaching model
+https://uvar-apps.github.io/eigenvista-education/chemistry/data/tio6-local.xyz
+SHA-256 e340048a7d219bbdeb92d79fc5873a33eff49f715d54b6db8810ee599ea438e9
+
+Verified outputs
+
+1AON ADP author chain A residue 1 is label chain W. The 4 Å queries give
+27 seeds, 74 matching atom centers, and 154 atoms in the full-residue
+neighborhood. The monitor uses source indices 657 and 58677 for THR A:91
+OG1 and ADP A:1 O2B. Its measured distance is 2.54551095 Å.
+
+The two 1CRN cartoons use the same fitted camera with horizontal and vertical
+orbits of 22° and −19°. The SES and SAS use the same source atoms, Bondi /
+Mantina radii, 1.4 Å probe, and 0.5 Å spacing. The accepted meshes contain
+27,608 and 34,724 triangles. The two images use the same camera and color.
+
+The seven-atom TiO6 image shows the 1.950 Å equatorial and 2.100 Å axial
+Ti–O distances. The CSV preserves those two distances, two angles and the
+signed torsion in the supplied local geometry.
+
+Terms for the source application and datasets
+
+EigenVista is distributed under GPL-2.0-or-later. See the upstream license.
+https://uvar-apps.github.io/eigenvista-education/assets/eigenvista-license.txt
+
+For deposit authors and citations, use the RCSB entry pages linked above.

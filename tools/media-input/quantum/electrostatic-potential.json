@@ -1,0 +1,38 @@
+{
+  "title": "Map electrostatic potential",
+  "kind": "workflow",
+  "scenes": [
+    {
+      "mode": "GUI",
+      "title": "Generate the all-electron density shell",
+      "caption": "Use the total electron density at 0.0248 electrons per cubic bohr on a 112³ grid. Enable electrostatic potential mapping.",
+      "image": "docs/assets/media/quantum/esp-map-controls.webp",
+      "seconds": 14,
+      "video": "tools/media-input/quantum/captures/esp-generate.webm"
+    },
+    {
+      "mode": "GUI",
+      "title": "Set the potential scale",
+      "caption": "Use a symmetric color range of ±0.130 hartree per electron charge. Changing this range recolors the same shell.",
+      "image": "docs/assets/media/quantum/esp-range-controls.webp",
+      "seconds": 10
+    },
+    {
+      "mode": "AI connector",
+      "title": "Request one mapped shell",
+      "caption": "The completed mesh contains 21,064 triangles. The density isovalue sets the shell geometry and the potential sets its color.",
+      "image": "docs/assets/media/quantum/esp-range-controls.webp",
+      "seconds": 10,
+      "prompt": "Generate the mapped total-density shell and confirm its resolution, triangle count, and potential units."
+    },
+    {
+      "mode": "AI connector",
+      "title": "Export the mapped shell and scale",
+      "caption": "The Phong export retains the numeric potential bar and the molecular framework. The figure records what the colors mean.",
+      "image": "docs/assets/media/quantum/salicylic-acid-esp.webp",
+      "seconds": 12,
+      "prompt": "Apply the vertex-colored Phong shader at 0.88 opacity and export a PNG with the potential scale visible.",
+      "video": "tools/media-input/quantum/captures/esp-connector.webm"
+    }
+  ]
+}

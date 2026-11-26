@@ -1,0 +1,25 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:08.211
+Enter atom numbers in order for the distance, angle, and signed torsion. The
+
+00:00:08.211 --> 00:00:12.000
+middle atom is the angle vertex.
+
+00:00:12.000 --> 00:00:19.222
+Save the annotated PNG with the visible bond monitor. Export a CSV that
+
+00:00:19.222 --> 00:00:22.000
+retains all three measurement definitions.
+
+00:00:22.000 --> 00:00:28.111
+Ask for the three ordered measurements, including their units and statuses.
+
+00:00:28.111 --> 00:00:32.000
+The GUI and connector number atoms differently.
+
+00:00:32.000 --> 00:00:39.429
+The C1–C2 distance is 1.525 angstroms. The CSV keeps the angle and negative
+
+00:00:39.429 --> 00:00:44.000
+signed torsion even when their monitors are hidden.

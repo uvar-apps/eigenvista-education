@@ -1,0 +1,40 @@
+{
+  "title": "Map one ADP neighborhood",
+  "kind": "workflow",
+  "scenes": [
+    {
+      "mode": "GUI",
+      "title": "Find one deposited ADP copy",
+      "caption": "Find ADP A:1 in the 1AON ligand list. Check for 27 seed atoms.",
+      "image": "docs/assets/media/chemistry/stills/ligand-choose-adp.webp",
+      "video": "tools/media-input/chemistry/captures/ligand-gui.webm",
+      "seconds": 7,
+      "videoStart": 0.75
+    },
+    {
+      "mode": "GUI",
+      "title": "Compare atom centers and full residues",
+      "caption": "Repeat the 4 Å query from the original ligand. Atom centers give 74 hits. Whole-residue expansion gives 154 atoms.",
+      "image": "docs/assets/media/chemistry/stills/ligand-residue-controls.webp",
+      "seconds": 8
+    },
+    {
+      "mode": "AI connector",
+      "title": "Specify the exact source identity",
+      "caption": "The connector resolved author A:1, label chain W, and used the same 27 seeds for both runs.",
+      "image": "docs/assets/media/chemistry/stills/ligand-cutoff-controls.webp",
+      "prompt": "Resolve ADP author A:1, label chain W. Report both 4 Å neighborhoods using the same ligand seeds.",
+      "seconds": 9,
+      "video": "tools/media-input/chemistry/captures/ligand-ai.webm",
+      "videoStart": 0.75
+    },
+    {
+      "mode": "AI connector",
+      "title": "Export the contact evidence",
+      "caption": "Check the 2.546 Å monitor, then save the annotated PNG and measurement CSV.",
+      "image": "docs/assets/media/chemistry/results/1aon-adp-a1.png",
+      "prompt": "Measure THR A:91 OG1 to ADP A:1 O2B. Export the annotated isolated neighborhood and measurement table.",
+      "seconds": 9
+    }
+  ]
+}

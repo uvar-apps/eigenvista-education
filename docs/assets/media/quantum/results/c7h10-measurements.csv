@@ -1,0 +1,4 @@
+id,label,kind,atoms,value,unit,status,reason
+"distance","distance",distance,"0 1",1.5250402584124771,angstrom,defined,""
+"angle","angle",angle,"0 1 6",100.31460268457259,degree,defined,""
+"torsion","torsion",torsion,"0 1 6 2",-50.383209613307095,degree,defined,""

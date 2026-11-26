@@ -1,0 +1,39 @@
+{
+  "title": "Measure a local TiO₆ site",
+  "kind": "workflow",
+  "scenes": [
+    {
+      "mode": "GUI",
+      "title": "Choose the central atom and two site types",
+      "caption": "Open the seven-atom teaching XYZ. Ti is atom 1. Choose +x and +z oxygen separately.",
+      "image": "docs/assets/media/chemistry/stills/coordination-distance-controls.webp",
+      "seconds": 8,
+      "video": "tools/media-input/chemistry/captures/coordination-gui.webm",
+      "videoStart": 0.75
+    },
+    {
+      "mode": "GUI",
+      "title": "Check the measurements",
+      "caption": "Compare 1.950 Å equatorial with 2.100 Å axial. Save the full geometry measurement table.",
+      "image": "docs/assets/media/chemistry/stills/coordination-angle-controls.webp",
+      "seconds": 8
+    },
+    {
+      "mode": "AI connector",
+      "title": "Name the atoms by coordinates",
+      "caption": "Ask for the approved source and the ordered atom identities before accepting the values.",
+      "image": "docs/assets/media/chemistry/stills/coordination-distance-controls.webp",
+      "seconds": 9,
+      "video": "tools/media-input/chemistry/captures/coordination-ai.webm",
+      "prompt": "Resolve the Ti at the origin and the +x and +z oxygens. Report the ordered geometry and compare their distances.",
+      "videoStart": 0.75
+    },
+    {
+      "mode": "AI connector",
+      "title": "Export the evidence",
+      "caption": "Keep the distance monitors in the annotated PNG and all five records in the CSV.",
+      "image": "docs/assets/media/chemistry/results/tio6-local-geometry.png",
+      "seconds": 9
+    }
+  ]
+}

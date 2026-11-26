@@ -1,0 +1,39 @@
+{
+  "title": "Read and compare the crambin fold",
+  "kind": "workflow",
+  "scenes": [
+    {
+      "mode": "GUI",
+      "title": "Switch from trace to cartoon",
+      "caption": "Open 1CRN. Compare Backbone trace with Protein cartoon at one camera.",
+      "image": "docs/assets/media/chemistry/stills/protein-secondary-controls.webp",
+      "seconds": 8,
+      "video": "tools/media-input/chemistry/captures/protein-gui.webm",
+      "videoStart": 0.75
+    },
+    {
+      "mode": "GUI",
+      "title": "Use the two color schemes",
+      "caption": "Export secondary-structure and residue-class PNGs at the same camera.",
+      "image": "docs/assets/media/chemistry/stills/protein-residue-controls.webp",
+      "seconds": 8
+    },
+    {
+      "mode": "AI connector",
+      "title": "Ask for a controlled comparison",
+      "caption": "Resolve the deposited chain and switch palettes. Preserve camera and cartoon style.",
+      "image": "docs/assets/media/chemistry/stills/protein-secondary-controls.webp",
+      "seconds": 9,
+      "video": "tools/media-input/chemistry/captures/protein-ai.webm",
+      "prompt": "Export one Secondary structure PNG and one Residue class PNG from the same camera. Then focus residues 7 through 19.",
+      "videoStart": 0.75
+    },
+    {
+      "mode": "AI connector",
+      "title": "Read the final figures",
+      "caption": "Match the helices and strand arrows, then compare residue classes along the same backbone.",
+      "image": "docs/assets/media/chemistry/results/1crn-secondary.png",
+      "seconds": 9
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+:root {
+  background: #e9eee5;
+  color: #142b25;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+
+.lesson-frame {
+  background: radial-gradient(ellipse at 82% 76%, #d3e3d7, transparent 55%), #eef2e9;
+  border-top: 12px solid #194537;
+  display: grid;
+  grid-template-rows: 96px 696px 96px;
+  height: 900px;
+  overflow: hidden;
+  padding-inline: 46px;
+  position: relative;
+  width: 1600px;
+}
+
+.lesson-header, .lesson-footer {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lesson-header {
+  align-items: baseline;
+  border-bottom: 2px solid #b4cabb;
+  padding-top: 26px;
+}
+
+.lesson-header p, .step-label, .source-tag {
+  color: #265944;
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: 0.065em;
+  text-transform: uppercase;
+}
+
+.lesson-header p { margin: 0; }
+.lesson-header h1 { font: 700 36px/1.05 Georgia, serif; margin: 0; }
+
+.lesson-content {
+  align-items: start;
+  display: grid;
+  gap: 38px;
+  grid-template-columns: 1024px 1fr;
+  padding-top: 24px;
+}
+
+.app-capture {
+  background: #18242b;
+  box-shadow: 0 12px 30px #17322427;
+  height: 648px;
+  margin: 0;
+  overflow: hidden;
+  width: 1024px;
+}
+
+.app-capture img {
+  display: block;
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+.lesson-step { padding: 25px 3px 12px 0; }
+.step-label { margin: 0 0 17px; }
+.lesson-step h2 { font: 700 50px/1.05 Georgia, serif; margin: 0 0 22px; }
+.step-caption { font-size: 28px; line-height: 1.25; margin: 0; }
+.step-prompt {
+  background: #e4eee4;
+  border: 2px solid #afc7b6;
+  color: #203b32;
+  font-size: 23px;
+  line-height: 1.23;
+  margin: 24px 0 0;
+  padding: 16px 18px;
+}
+.step-prompt b { display: block; margin-bottom: 6px; }
+
+.lesson-footer { border-top: 2px solid #b4cabb; padding-bottom: 10px; }
+.lesson-progress { display: flex; gap: 7px; }
+.lesson-progress span { background: #bfd2c4; height: 7px; width: 34px; }
+.lesson-progress .complete { background: #24664e; }

@@ -1,0 +1,38 @@
+{
+  "title": "Measure and annotate molecular geometry",
+  "kind": "workflow",
+  "scenes": [
+    {
+      "mode": "GUI",
+      "title": "Measure the ordered source atoms",
+      "caption": "Enter atom numbers in order for the distance, angle, and signed torsion. The middle atom is the angle vertex.",
+      "image": "docs/assets/media/quantum/geometry-measurement-controls.webp",
+      "seconds": 12,
+      "video": "tools/media-input/quantum/captures/geometry-measurements.webm"
+    },
+    {
+      "mode": "GUI",
+      "title": "Export the figure and measurement table",
+      "caption": "Save the annotated PNG with the visible bond monitor. Export a CSV that retains all three measurement definitions.",
+      "image": "docs/assets/media/quantum/c7h10-geometry.webp",
+      "seconds": 10
+    },
+    {
+      "mode": "AI connector",
+      "title": "Ask the connector to measure",
+      "caption": "Ask for the three ordered measurements, including their units and statuses. The GUI and connector number atoms differently.",
+      "image": "docs/assets/media/quantum/geometry-measurement-controls.webp",
+      "seconds": 10,
+      "prompt": "Measure 1–2, 1–2–7, and 1–2–7–3 using the displayed atom numbers. Identify the matching source indices.",
+      "video": "tools/media-input/quantum/captures/geometry-connector.webm"
+    },
+    {
+      "mode": "AI connector",
+      "title": "Verify the label and CSV",
+      "caption": "The C1–C2 distance is 1.525 angstroms. The CSV keeps the angle and negative signed torsion even when their monitors are hidden.",
+      "image": "docs/assets/media/quantum/c7h10-geometry.webp",
+      "seconds": 12,
+      "prompt": "Export the annotated view and a measurement CSV. Read the file back and verify all three ordered definitions."
+    }
+  ]
+}

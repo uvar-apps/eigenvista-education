@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:09.000
+Open 1CRN. Compare Backbone trace with Protein cartoon at one camera.
+
+00:00:09.000 --> 00:00:18.000
+Export secondary-structure and residue-class PNGs at the same camera.
+
+00:00:18.000 --> 00:00:26.250
+Resolve the deposited chain and switch palettes. Preserve camera and cartoon
+
+00:00:26.250 --> 00:00:27.000
+style.
+
+00:00:27.000 --> 00:00:34.714
+Match the helices and strand arrows, then compare residue classes along the
+
+00:00:34.714 --> 00:00:36.000
+same backbone.

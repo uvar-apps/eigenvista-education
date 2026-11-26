@@ -34,6 +34,9 @@ theme:
 extra_css:
   - assets/education.css
 
+extra_javascript:
+  - assets/tutorial-media.js
+
 extra:
   social:
     - icon: fontawesome/brands/github

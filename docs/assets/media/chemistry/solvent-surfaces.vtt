@@ -1,0 +1,22 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:08.471
+Use all 327 source atoms, Bondi / Mantina radii, a 1.4 Å probe, and 0.5 Å
+
+00:00:08.471 --> 00:00:09.000
+spacing.
+
+00:00:09.000 --> 00:00:17.357
+Expect 27,608 SES triangles and 34,724 SAS triangles. Export one mesh at a
+
+00:00:17.357 --> 00:00:18.000
+time.
+
+00:00:18.000 --> 00:00:27.000
+Run separate jobs and verify the accepted settings and mesh counts.
+
+00:00:27.000 --> 00:00:34.875
+Switch only the visible surface. Keep the camera and style fixed for the two
+
+00:00:34.875 --> 00:00:36.000
+PNG exports.

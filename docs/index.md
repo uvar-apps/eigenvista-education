@@ -52,6 +52,44 @@ Navigate molecular and protein structures, isolate components, measure local geo
 
 </div>
 
+## Watch a workflow
+
+<div class="education-workflows" markdown="1">
+
+<section markdown="1">
+
+### Compare frontier orbitals
+
+<figure class="tutorial-media">
+  <video controls playsinline preload="none" width="1600" height="900" poster="assets/media/quantum/c7h10-homo-128.webp" data-kind="workflow" aria-label="Compare frontier orbitals in EigenVista">
+    <source src="assets/media/quantum/frontier-orbitals.mp4" type="video/mp4">
+    <track kind="captions" src="assets/media/quantum/frontier-orbitals.vtt" srclang="en" label="English" default>
+    <track kind="chapters" src="assets/media/quantum/frontier-orbitals-chapters.vtt" srclang="en" label="Chapters">
+  </video>
+</figure>
+
+[GUI lesson](quantum/workflows/frontier-orbitals-gui.md) · [AI connector lesson](quantum/workflows/frontier-orbitals-agent.md)
+
+</section>
+
+<section markdown="1">
+
+### Inspect one ADP neighborhood
+
+<figure class="tutorial-media">
+  <video controls playsinline preload="none" width="1600" height="900" poster="assets/media/chemistry/results/1aon-adp-a1.png" data-kind="workflow" aria-label="Inspect one ADP neighborhood in EigenVista">
+    <source src="assets/media/chemistry/ligand-neighborhood.mp4" type="video/mp4">
+    <track kind="captions" src="assets/media/chemistry/ligand-neighborhood.vtt" srclang="en" label="English" default>
+    <track kind="chapters" src="assets/media/chemistry/ligand-neighborhood-chapters.vtt" srclang="en" label="Chapters">
+  </video>
+</figure>
+
+[GUI lesson](chemistry/workflows/ligand-neighborhood-gui.md) · [AI connector lesson](chemistry/workflows/ligand-neighborhood-agent.md)
+
+</section>
+
+</div>
+
 ## Work through a research task
 
 Each workflow supplies an input, a sequence to follow, and a result to check. Choose the interface you want to use.

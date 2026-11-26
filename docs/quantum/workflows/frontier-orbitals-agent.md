@@ -2,6 +2,15 @@
 
 Make two matched views of the C₇H₁₀ frontier orbitals and a native file containing both signed mesh pairs. Use a connected EigenVista 0.10.6 session and run the prompts in order. [Set up EigenVista](../../setup.md) · [Quantum agent tour](../agent.md) · [GUI version](frontier-orbitals-gui.md)
 
+<figure class="tutorial-media">
+  <video controls playsinline preload="none" width="1600" height="900" poster="../../../assets/media/quantum/c7h10-homo-128.webp" data-kind="workflow" aria-label="Frontier orbital workflow video">
+    <source src="../../../assets/media/quantum/frontier-orbitals.mp4" type="video/mp4">
+    <track kind="captions" src="../../../assets/media/quantum/frontier-orbitals.vtt" srclang="en" label="English" default>
+    <track kind="chapters" src="../../../assets/media/quantum/frontier-orbitals-chapters.vtt" srclang="en" label="Chapters">
+  </video>
+  <figcaption>Follow the AI connector chapter to see the prompt and its two native figure exports.</figcaption>
+</figure>
+
 ## Resolve the orbitals
 
 ```text
@@ -29,9 +38,31 @@ meshes and export c7h10-homo-128.png. Show only the LUMO's two meshes and
 export c7h10-lumo-128.png. Before each export, select the corresponding field
 and re-enable the rendering key to load its units. Use fresh paths in Results.
 Inspect both PNGs and report the camera and appearance settings with the files.
+Write a comparison CSV with one row per signed mesh. Include its orbital ID,
+occupation, energy in hartree, signed isovalue, grid size and triangle count.
 ```
 
 The response should identify **four meshes**, one positive and one negative for each field. A checked v0.10.6 run produced **9,324 / 9,412** positive / negative HOMO triangles and **9,144 / 9,132** positive / negative LUMO triangles. Use `camera.get` and `camera.set` when the same pose must survive scene changes. `surfaces.list` supplies actual signed levels, resolutions and triangle counts. [Connector reference](https://uvar-apps.github.io/eigenvista/downloads/eigenvista-control/reference.md)
+
+### Worked results
+
+<div class="tutorial-comparison" markdown="1">
+
+[![C₇H₁₀ HOMO with phase-colored signed surfaces, produced by the packaged connector](../../assets/media/quantum/c7h10-homo-128.webp)](../../assets/media/quantum/results/c7h10-homo-128.png)
+
+[![C₇H₁₀ LUMO from the same connector session and camera](../../assets/media/quantum/c7h10-lumo-128.webp)](../../assets/media/quantum/results/c7h10-lumo-128.png)
+
+</div>
+
+Compare your exports with this verified 0.10.6 run. The image dimensions match and each displays the two signed levels for its own field. [Download HOMO PNG](../../assets/media/quantum/results/c7h10-homo-128.png){ download } · [Download LUMO PNG](../../assets/media/quantum/results/c7h10-lumo-128.png){ download } · [Download comparison CSV](../../assets/media/quantum/results/c7h10-frontier-comparison.csv){ download }.
+
+<figure class="tutorial-media">
+  <video controls playsinline preload="none" width="1280" height="720" poster="../../../assets/media/concepts/orbital-phase.webp" data-kind="concept" aria-label="Orbital phase and density">
+    <source src="../../../assets/media/concepts/orbital-phase.mp4" type="video/mp4">
+    <track kind="captions" src="../../../assets/media/concepts/orbital-phase.vtt" srclang="en" label="English" default>
+  </video>
+  <figcaption>This schematic shows a global sign flip of ψ, the fixed nodal plane, and the unchanged nonnegative |ψ|².</figcaption>
+</figure>
 
 ## Keep the result and assess the orbital comparison
 

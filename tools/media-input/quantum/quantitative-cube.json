@@ -1,0 +1,38 @@
+{
+  "title": "Validate a cube slice and profile",
+  "kind": "workflow",
+  "scenes": [
+    {
+      "mode": "GUI",
+      "title": "Set up the XY section",
+      "caption": "Use bohr coordinates, an XY plane through the origin, and a 4 by 4 bohr section with 81 by 81 samples.",
+      "image": "docs/assets/media/quantum/cube-plane-controls.webp",
+      "seconds": 13,
+      "video": "tools/media-input/quantum/captures/cube-section.webm"
+    },
+    {
+      "mode": "GUI",
+      "title": "Read the signed scale",
+      "caption": "Use a fixed range from minus 0.45 to plus 0.45. The zero contour separates negative and positive values.",
+      "image": "docs/assets/media/quantum/cube-inspection-workspace.webp",
+      "seconds": 9
+    },
+    {
+      "mode": "AI connector",
+      "title": "Make the plane and profile",
+      "caption": "The signed contour image and plane CSV describe the same section. The profile runs along x from minus four to plus four bohr.",
+      "image": "docs/assets/media/quantum/signed-affine-plane.webp",
+      "seconds": 11,
+      "prompt": "Make the signed XY section, export the plane PNG and CSV, and sample the x profile at 81 positions.",
+      "video": "tools/media-input/quantum/captures/cube-connector.webm"
+    },
+    {
+      "mode": "AI connector",
+      "title": "Verify the CSV boundaries",
+      "caption": "The profile has 81 rows and covers 4.2334 angstroms. Both endpoints are outside the grid and have blank value cells.",
+      "image": "docs/assets/media/quantum/signed-affine-plane.webp",
+      "seconds": 11,
+      "prompt": "Check the sample count, scalar units, and status of both endpoints before returning the files."
+    }
+  ]
+}

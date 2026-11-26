@@ -2,6 +2,22 @@
 
 Compare equatorial and axial distances in a local coordination model. The [TiO₆ teaching XYZ](../data/tio6-local.xyz) is an idealized, finite set of seven atoms in Å. It models an elongated oxygen octahedron around titanium. Use the exercise to practice recording geometry from a cluster or local site prepared elsewhere. [Set up EigenVista](../../setup.md).
 
+<figure class="tutorial-media">
+  <video data-kind="workflow" controls playsinline preload="none" width="1600" height="900"
+    aria-label="Measure and export a TiO₆ local site" poster="../../../assets/media/chemistry/stills/coordination-distance-controls.webp">
+    <source src="../../../assets/media/chemistry/coordination-geometry.mp4" type="video/mp4">
+    <track kind="captions" src="../../../assets/media/chemistry/coordination-geometry.vtt" srclang="en" label="English" default>
+    <track kind="chapters" src="../../../assets/media/chemistry/coordination-geometry-chapters.vtt" srclang="en" label="Chapters">
+  </video>
+  <figcaption>Select the oxygen sites by identity, compare two distances, and export the figure and table.</figcaption>
+</figure>
+
+## Download the result
+
+![Exported seven-atom titanium oxide model with separate monitors for the equatorial and axial titanium–oxygen distances](../../assets/media/chemistry/results/tio6-local-geometry.png)
+
+Download the [annotated PNG](../../assets/media/chemistry/results/tio6-local-geometry.png){: download="tio6-local-geometry.png" } and [measurement CSV](../../assets/media/chemistry/results/tio6-local-geometry.csv){: download="tio6-local-geometry.csv" }. The figure shows the two distance monitors. The CSV also preserves the two angles, the signed torsion, and the atom order.
+
 ## Import and choose the atom pairs
 
 1. Open `tio6-local.xyz` in EigenVista 0.10.6. Choose **Ball and stick** and confirm **7 atoms** in **Molecule → Molecular data**. Atom **1** is Ti at the origin, atoms **2–5** are oxygen on the ±x and ±y axes, and **6–7** are oxygen on ±z. Use a click in the scene to confirm an atom's identity and coordinates.
@@ -16,6 +32,10 @@ Compare equatorial and axial distances in a local coordination model. The [TiO�
 | Example O–Ti–O–O torsion | Signed torsion | `2, 1, 4, 6` | −90° |
 
 In the angle rows, atom **1** is the vertex. The signed torsion is a four-point geometric check of the application convention. Only the specified order gives the listed sign. A collinear plane reports **Undefined** for torsion. Keep the two distance monitors visible and export a figure comparing the short and long distances.
+
+![EigenVista geometry panel with the measured equatorial and axial titanium–oxygen distances](../../assets/media/chemistry/stills/coordination-distance-controls.webp)
+
+*Use the geometry table to check the numbers and units before exporting.*
 
 ## Document what the coordinates show
 

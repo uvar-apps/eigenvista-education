@@ -2,6 +2,15 @@
 
 Make a salicylic acid total electron-density shell and color it by molecular electrostatic potential. Use the same shell to observe what changes when you adjust the color scale or the lighting. [Quantum GUI tour](../gui.md) · [Agent version](electrostatic-potential-agent.md)
 
+<figure class="tutorial-media">
+  <video controls playsinline preload="none" width="1600" height="900" poster="../../../assets/media/quantum/esp-map-controls.webp" data-kind="workflow" aria-label="Electrostatic potential workflow video">
+    <source src="../../../assets/media/quantum/electrostatic-potential.mp4" type="video/mp4">
+    <track kind="captions" src="../../../assets/media/quantum/electrostatic-potential.vtt" srclang="en" label="English" default>
+    <track kind="chapters" src="../../../assets/media/quantum/electrostatic-potential-chapters.vtt" srclang="en" label="Chapters">
+  </video>
+  <figcaption>The GUI chapter follows the density level and mapping controls. The AI connector chapter shows the figure with its quantitative potential scale.</figcaption>
+</figure>
+
 ![Translucent salicylic acid density shell showing the molecular framework inside and a potential scale running from red through green to blue](../../assets/salicylic-acid.webp)
 
 The reference shell is drawn at **0.0248 electrons/bohr³**. Its colors cover **−0.130 to +0.130 hartree/e**, with the Phong shader's opacity set to **0.88**. [EigenVista Gallery](https://uvar-apps.github.io/eigenvista/gallery.html#salicylic-acid) · [Capture provenance](https://uvar-apps.github.io/eigenvista/assets/media/provenance.json)
@@ -19,6 +28,14 @@ For the optional figure finish, use `surface-phong-vertex-color.vert`, `surface-
 3. Enable **Map electrostatic potential (all-electron density)** and click **Generate surfaces**. Wait for the mesh generation and potential-mapping stages to finish. The published example produces one mesh with **21,064 triangles** at these settings.
 4. In **Surfaces → Saved surfaces**, keep **Show electrostatic potential** enabled and set **Color range ± (hartree/e)** to **0.130**. Press Enter. The scale runs from red at **−0.130** through green at zero to blue at **+0.130 hartree/e**.
 5. Export a figure with built-in **Blinn-Phong** or **Diffuse** shading. For a second finish, open **Appearance → Surface shader** and load the vertex, fragment and parameter files. Under **Apply to**, target the density mesh, enable **Shader transparency**, and click **Apply shader**. Check the **0.88** opacity uniform. Export another PNG with the same camera and color range. [Upstream figure and settings](https://uvar-apps.github.io/eigenvista/tutorials-electrostatic-potential.html)
+
+![EigenVista saved surfaces controls for the mapped density shell and its potential range](../../assets/media/quantum/esp-range-controls.webp)
+
+### Worked results
+
+[![Salicylic acid density shell shown with its numerical electrostatic-potential scale in the native connector export](../../assets/media/quantum/salicylic-acid-esp.webp)](../../assets/media/quantum/results/salicylic-acid-esp.png)
+
+Use **Export image** after setting the range and shader. The sample records the 0.0248 electrons/bohr³ density shell, the ±0.130 hartree/e potential range, and the Phong appearance. [Download the mapped PNG](../../assets/media/quantum/results/salicylic-acid-esp.png){ download }.
 
 ## Check which setting changes which result
 

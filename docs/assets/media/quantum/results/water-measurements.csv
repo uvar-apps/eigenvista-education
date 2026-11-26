@@ -1,0 +1,2 @@
+id,label,kind,atoms,value,unit,status,reason
+"water-distance","O–H distance",distance,"0 1",0.9579971911750147,angstrom,defined,""

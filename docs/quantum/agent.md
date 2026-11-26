@@ -2,6 +2,17 @@
 
 Use an external coding agent to operate your installed EigenVista 0.10.6 window. The prompts below produce a signed water orbital figure, a numerical profile and a native molecular document. Run them in order, reviewing each result before giving the next prompt. [Set up EigenVista](../setup.md) · [GUI version](gui.md)
 
+<figure class="tutorial-media">
+  <video controls playsinline preload="none" width="1600" height="900" poster="../../assets/media/quantum/water-homo.webp" data-kind="tour" aria-label="Quantum chemistry AI connector tour">
+    <source src="../../assets/media/quantum/tour-agent.mp4" type="video/mp4">
+    <track kind="captions" src="../../assets/media/quantum/tour-agent.vtt" srclang="en" label="English" default>
+    <track kind="chapters" src="../../assets/media/quantum/tour-agent-chapters.vtt" srclang="en" label="Chapters">
+  </video>
+  <figcaption>Narrated walkthrough showing example prompts, EigenVista states that match the requests, and actual exports from the packaged 0.10.6 connector.</figcaption>
+</figure>
+
+[Read the tour transcript](../assets/media/quantum/tour-agent-transcript.txt).
+
 ## 1. Connect and verify the input
 
 Start a connector-enabled session and give your agent the nonsecret session note. Use the approved input and Results folders from that note. The agent reads the portable connector instructions and uses the bundled helper from the same installed package. [Official connector guide](https://uvar-apps.github.io/eigenvista/ai-guide.html)
@@ -35,6 +46,8 @@ Results using a fresh name and inspect the actual image.
 
 The output should have distinct signs at **−0.03** and **+0.03 bohr⁻³ᐟ²**. Both colors encode phase. A separately rendered total-density surface uses electrons/bohr³ and has only a positive level for a nonnegative density. Try the LUMO later with the same camera, isovalue and resolution for a like-for-like comparison.
 
+![Transparent EigenVista connector export of the two signed water HOMO levels with the numeric field key](../assets/media/quantum/water-homo.webp)
+
 ## 3. Measure, sample and preserve the work
 
 ```text
@@ -50,6 +63,8 @@ paths and any session settings I need to reapply to reproduce the figure.
 ```
 
 The monitor distance and profile length should agree at approximately **0.9580 Å** because they use the same atomic centers. Connector atom indices start at zero and GUI atom numbers at one. Scientific record definitions, cached analyses and meshes persist in the native document. Keep the PNG and the camera, background, palette, AO and shader settings alongside it. [Persistence reference](https://uvar-apps.github.io/eigenvista/reference.html#persistence)
+
+Compare your exports with these worked outputs from the released connector. [Download signed HOMO PNG](../assets/media/quantum/results/water-homo.png){ download } · [Download the O–H measurement CSV](../assets/media/quantum/results/water-measurements.csv){ download } · [Download the HOMO profile CSV](../assets/media/quantum/results/water-homo-profile.csv){ download }.
 
 ## 4. Ask for the next operation by its outcome
 
@@ -73,6 +88,27 @@ surface measures. If you save this extension, give it a fresh native path.
 | Make figures | Set representation, palette, camera, background and shading, apply an available X-ray, clipping or vertex-colored Phong preset, and verify a PNG export. |
 
 The agent can check the live capabilities and translate these requests into supported actions. It should read back the accepted settings and confirm the calculation finished before exporting. Use a fresh output path or grant explicit replacement for a specific existing result. For batch file conversion, ask the agent to use the installed converter. [Portable connector reference](https://uvar-apps.github.io/eigenvista/downloads/eigenvista-control/reference.md) · [Converter documentation](https://uvar-apps.github.io/eigenvista/reference-files.html)
+
+## 5. Ask for progress, a cutaway, and converted copies
+
+```text
+Start a finer test mesh for the same field while keeping the saved result.
+Report the job's current phase and elapsed time. If I ask to cancel, stop
+only that job, then confirm which previously completed meshes are available.
+```
+
+```text
+In the extension with the density and solvent-accessible shells, keep only
+the density shell visible. Apply the surface clipping preset to that shell.
+Change its x maximum to zero, export the cutaway PNG, and record the uniforms.
+Clear the shader afterward if I want to return to the ordinary surface.
+```
+
+```text
+Use the installed converter for approved water.molden and signed-affine.cube.
+Write each result as a fresh native file under Results. Verify both outputs,
+report any warnings per source file, and keep the active viewer document open.
+```
 
 ## Practice on research tasks
 

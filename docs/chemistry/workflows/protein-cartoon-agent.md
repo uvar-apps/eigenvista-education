@@ -2,11 +2,31 @@
 
 Use one camera to compare deposited secondary structure and residue classes in crambin. Start a connector-enabled EigenVista 0.10.6 session, give your agent the session note path, and approve an input and results folder. Use text mmCIF or BinaryCIF. [Set up EigenVista](../../setup.md), [RCSB PDB 1CRN](https://www.rcsb.org/structure/1CRN).
 
+<figure class="tutorial-media">
+  <video data-kind="workflow" controls playsinline preload="none" width="1600" height="900"
+    aria-label="Two ways to inspect the 1CRN fold" poster="../../../assets/media/chemistry/stills/protein-secondary-controls.webp">
+    <source src="../../../assets/media/chemistry/protein-cartoon.mp4" type="video/mp4">
+    <track kind="captions" src="../../../assets/media/chemistry/protein-cartoon.vtt" srclang="en" label="English" default>
+    <track kind="chapters" src="../../../assets/media/chemistry/protein-cartoon-chapters.vtt" srclang="en" label="Chapters">
+  </video>
+  <figcaption>Change the representation and coloring in the GUI, then see the matched figures exported by the agent.</figcaption>
+</figure>
+
+## Download the result
+
+![Crambin cartoon exported at one camera with pink helices, yellow strand arrows, and gray unassigned segments](../../assets/media/chemistry/results/1crn-secondary.png)
+
+Download [secondary-structure PNG](../../assets/media/chemistry/results/1crn-secondary.png){: download="1crn-secondary.png" } and [residue-class PNG](../../assets/media/chemistry/results/1crn-residue-class.png){: download="1crn-residue-class.png" }. The released app exported both views from the same camera. Use the first to locate helices and strand arrows, then use the second to compare residue classes along those regions.
+
 ## Ask for matched figures
 
 > Use my authorized EigenVista session. Read its app capabilities and state, and preserve any current unsaved work. Obtain 1CRN from https://files.rcsb.org/download/1CRN.cif or https://models.rcsb.org/1crn.bcif in my approved Inputs folder unless that input is already available. Confirm the imported atom and residue counts, the deposited label and author identity of chain A, and the origin of the secondary assignments. Keep the whole protein visible. Show Protein backbone trace, fit the molecule, and export a new 1crn-trace.png. Keep that camera, switch to Protein cartoon and Secondary structure coloring, then export a new 1crn-secondary.png after the representation is ready. Change only the coloring to Residue class and export a new 1crn-residue-class.png. Compare the legends and what the two color schemes reveal about the same fold. Give me each PNG and its dimensions.
 
 Compare the same source and camera in the trace and cartoon figures. In EigenVista's 1CRN fixtures, you should see **327 atoms**, **46 residues**, one chain **A**, and deposited annotations for **21 helical**, **8 sheet**, and **17 unknown** residues. The last two images share geometry and camera. Their legends encode different attributes. [Upstream fixture record](https://github.com/uvar-apps/eigenvista/tree/v0.10.6/fixtures/bcif).
+
+![The EigenVista viewport after the controller focuses residues 7 through 19 of crambin](../../assets/media/chemistry/stills/protein-ai-range.webp)
+
+*The controller focused on the requested 13-residue interval. The matching image pair above shows the full fold.*
 
 ## Inspect one helix in atomic detail
 

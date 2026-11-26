@@ -121,10 +121,65 @@
   padding: 0.65em 0.8em;
 }
 
+.md-typeset .tutorial-media {
+  margin: 1.25rem 0;
+  max-width: none;
+  text-align: left;
+}
+
+.tutorial-media video {
+  aspect-ratio: 16 / 9;
+  background: #18242b;
+  border: 1px solid var(--education-border);
+  border-radius: 0.4rem;
+  display: block;
+  height: auto;
+  object-fit: contain;
+  width: 100%;
+}
+
+.md-typeset .tutorial-media figcaption {
+  font-size: 0.72rem;
+  font-style: normal;
+  margin: 0.5rem 0 0;
+}
+
+.md-typeset .tutorial-chapters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.55rem;
+}
+
+.md-typeset .tutorial-chapters button {
+  background: var(--education-panel);
+  border: 1px solid var(--education-border);
+  border-radius: 0.25rem;
+  color: var(--md-typeset-a-color);
+  font-size: 0.7rem;
+  line-height: 1.25;
+  padding: 0.4em 0.7em;
+  text-align: left;
+}
+
+.md-typeset .tutorial-chapters button:hover {
+  border-color: var(--md-typeset-a-color);
+}
+
+.tutorial-comparison {
+  display: grid;
+  gap: 0.65rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.md-typeset .tutorial-comparison p { margin: 0; }
+.tutorial-comparison img { border-radius: 0.3rem; display: block; width: 100%; }
+
 @media (max-width: 42em) {
   .education-hero,
   .education-tracks,
-  .education-workflows {
+  .education-workflows,
+  .tutorial-comparison {
     grid-template-columns: minmax(0, 1fr);
   }
 }

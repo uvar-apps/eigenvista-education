@@ -2,6 +2,15 @@
 
 Turn three geometry measurements into a traceable record with a named atom set, PNG, CSV and native file. Use the identified EigenVista 0.10.6 session and run each prompt after checking the prior response. [Set up EigenVista](../../setup.md) · [Quantum agent tour](../agent.md) · [GUI version](geometry-gui.md)
 
+<figure class="tutorial-media">
+  <video controls playsinline preload="none" width="1600" height="900" poster="../../../assets/media/quantum/c7h10-geometry.webp" data-kind="workflow" aria-label="Geometry measurement workflow video">
+    <source src="../../../assets/media/quantum/geometry.mp4" type="video/mp4">
+    <track kind="captions" src="../../../assets/media/quantum/geometry.vtt" srclang="en" label="English" default>
+    <track kind="chapters" src="../../../assets/media/quantum/geometry-chapters.vtt" srclang="en" label="Chapters">
+  </video>
+  <figcaption>The AI connector chapter pairs the ordered geometry request with the exported measurement record.</figcaption>
+</figure>
+
 ## Resolve the source atoms and measure
 
 ```text
@@ -31,6 +40,12 @@ read the CSV to check ordered atoms, statuses and units.
 ```
 
 The PNG should show the distance and bridge label. All three definitions should appear in the CSV even if two monitors are hidden. `measure.evaluate` returns numerical results. `measure.upsert` saves visible or hidden definitions, and `measure.list` lets the agent verify the stored results. `labels.upsert` creates the atom label independently of selection. [Inspection reference](https://uvar-apps.github.io/eigenvista/reference-inspection.html#measure)
+
+### Worked results
+
+[![Native EigenVista figure with the bridge carbon label and the 1.525 Å bond monitor](../../assets/media/quantum/c7h10-geometry.webp)](../../assets/media/quantum/results/c7h10-geometry.png)
+
+Check the published PNG and read the exported CSV. For the shown source geometry, the rows report about 1.525 Å, 100.315° and −50.383°. [Download annotated PNG](../../assets/media/quantum/results/c7h10-geometry.png){ download } · [Download measurements CSV](../../assets/media/quantum/results/c7h10-measurements.csv){ download }.
 
 ## Reopen and check
 

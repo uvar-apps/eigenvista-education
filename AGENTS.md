@@ -8,6 +8,7 @@ the [specification](Specification.md) and the [progress log](PROGRESS.md).
 - Start a worked example with its input and settings. Include a result readers can check, its units when applicable, and enough detail to distinguish a native save from a figure export.
 - Write AI examples as natural-language requests for a local coding agent. Keep connector commands in setup or maintainer notes. Use approved inputs, separate outputs, and wait for calculations before reporting or saving results.
 - Preserve provenance and applicable notices for upstream data or captures. Use repository-relative Markdown links within the site. Never add private data, session files, or credentials.
+- Place screenshots and clips beside the steps they demonstrate. Provide a downloadable figure or report for every workflow and show how to reproduce it. Keep captions, chapter tracks, and capture settings with the media sources in `tools/media-input/`.
 - Run `python -m mkdocs build --strict` from the repository root after changes. Check the affected routes and exercise navigation and search in a browser for changes to layout or site configuration.
 - Record changes to scope, source versions, verification, and publication in `PROGRESS.md`. GitHub Actions publishes only the built `site/` directory.
 

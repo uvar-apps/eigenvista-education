@@ -1,0 +1,25 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:10.316
+Use the total electron density at 0.0248 electrons per cubic bohr on a 112³
+
+00:00:10.316 --> 00:00:14.000
+grid. Enable electrostatic potential mapping.
+
+00:00:14.000 --> 00:00:20.667
+Use a symmetric color range of ±0.130 hartree per electron charge. Changing
+
+00:00:20.667 --> 00:00:24.000
+this range recolors the same shell.
+
+00:00:24.000 --> 00:00:29.789
+The completed mesh contains 21,064 triangles. The density isovalue sets the
+
+00:00:29.789 --> 00:00:34.000
+shell geometry and the potential sets its color.
+
+00:00:34.000 --> 00:00:40.947
+The Phong export retains the numeric potential bar and the molecular
+
+00:00:40.947 --> 00:00:46.000
+framework. The figure records what the colors mean.

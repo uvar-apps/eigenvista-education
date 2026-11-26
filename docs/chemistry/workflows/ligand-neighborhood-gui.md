@@ -2,6 +2,23 @@
 
 Find the atoms around a specific ADP copy in the GroEL–GroES complex. Compare an atom-center cutoff with its whole-residue expansion, then record one distance using the deposited atom identities. Use EigenVista 0.10.6 and the exact [1AON.cif sample](https://uvar-apps.github.io/eigenvista/downloads/1AON.cif). [Set up EigenVista](../../setup.md).
 
+<figure class="tutorial-media">
+  <video data-kind="workflow" controls playsinline preload="none" width="1600" height="900"
+    aria-label="ADP neighborhood in the GUI and with an AI connector"
+    poster="../../../assets/media/chemistry/stills/ligand-choose-adp.webp">
+    <source src="../../../assets/media/chemistry/ligand-neighborhood.mp4" type="video/mp4">
+    <track kind="captions" src="../../../assets/media/chemistry/ligand-neighborhood.vtt" srclang="en" label="English" default>
+    <track kind="chapters" src="../../../assets/media/chemistry/ligand-neighborhood-chapters.vtt" srclang="en" label="Chapters">
+  </video>
+  <figcaption>Follow the GUI selection, then see the agent's request and the measured contact.</figcaption>
+</figure>
+
+## Download the result
+
+![Exported 1AON complete-residue neighborhood in ball-and-stick view, labeled ADP A:1 with the 2.546 angstrom contact monitor](../../assets/media/chemistry/results/1aon-adp-a1.png)
+
+The figure isolates ADP A:1 and its whole-residue neighborhood. The yellow monitor marks the **2.546 Å** center-to-center distance between THR A:91 OG1 and ADP A:1 O2B. Download the [annotated PNG](../../assets/media/chemistry/results/1aon-adp-a1.png){: download="1aon-adp-a1.png" } and the [measurement CSV](../../assets/media/chemistry/results/1aon-adp-a1.csv){: download="1aon-adp-a1.csv" }. Both are exports from the released desktop app.
+
 ## Find the copy and compare two selections
 
 1. Open the file and confirm **58,870 selected atoms**. Choose **Ball and stick** so individual ligand and protein atoms are visible.
@@ -9,13 +26,25 @@ Find the atoms around a specific ADP copy in the GroEL–GroES complex. Compare 
 3. Set **Neighborhood radius (Å)** to **4.0** and leave **Include complete residues** off. Enter `ADP A:1 4 Å atoms` in **Save neighborhood as** and choose **Show neighborhood**. Wait for it to finish. Expect **74 selected atoms**, including the 27 seeds.
 4. Select the same original ADP copy again to restore the ligand as the search seed. Keep **4.0 Å**, turn **Include complete residues** on, and save `ADP A:1 4 Å complete residues`. Expect **154 selected atoms** spanning **21 residues**, including the ligand and the magnesium ion. The expansion includes every atom of each matched residue, so some of these atoms are farther than 4.0 Å from every ligand atom.
 
+![EigenVista selection panel after finding 74 atom centers within four angstroms of ADP A:1](../../assets/media/chemistry/stills/ligand-cutoff-controls.webp)
+
+*Atom-center result. Look for 74 selected atoms in the selection panel before restoring the same seeds for whole-residue expansion.*
+
 The search uses all loaded source atoms, including hidden ones. Each saved selection is a fixed set of source indices for this document. The first answers which atom centers pass the cutoff. The second gives residue context for those hits.
+
+<figure class="tutorial-media">
+  <video controls playsinline preload="none" width="1280" height="720" poster="../../../assets/media/concepts/ligand-expansion.webp" data-kind="concept" aria-label="Atom cutoff and whole-residue expansion">
+    <source src="../../../assets/media/concepts/ligand-expansion.mp4" type="video/mp4">
+    <track kind="captions" src="../../../assets/media/concepts/ligand-expansion.vtt" srclang="en" label="English" default>
+  </video>
+  <figcaption>Both searches start from the same ADP copy. The schematic shows how 74 atom-center hits expand to 154 atoms when complete residues are included.</figcaption>
+</figure>
 
 ## Record a contact distance
 
 1. In **Selected atoms**, enter `658, 58678` in **Atom numbers, in measurement order** and choose **Select atom numbers**. Confirm **THR 91 OG1** (author chain A) and **ADP 1 O2B** (author chain A, label chain W). These are one-based GUI atom numbers for the linked sample. If a different input revision gives different numbers, use the deposited identities to resolve them again.
 2. Under **Geometry measurements**, add a **Distance** named `THR A:91 OG1 to ADP A:1 O2B`. Expect approximately **2.546 Å**. Export the measurement CSV. Turn on **Always show measurement label** when adding or editing the measurement if you want it visible through geometry.
-3. In **Named selections**, choose **Isolate** and **Focus** for the saved complete-residue selection. Export a neighborhood PNG and save a new `1aon-adp-a1.eigenvista` with both named sets and the measurement. The app saves the sets and measurement definition. The current crop and camera remain session settings.
+3. In **Named selections**, choose **Isolate** and **Focus** for the saved complete-residue selection. Enter just the two measured atom numbers again to reduce the marker overlay while retaining the isolated view. Use the viewport toolbar to export the neighborhood PNG, then save a new `1aon-adp-a1.eigenvista` with both named sets and the measurement. The app saves the sets and measurement definition. The current crop and camera remain session settings.
 
 Report the atom-center distance and provenance as geometric observations. Assigning a hydrogen bond or assessing affinity requires additional evidence beyond this cutoff and distance. [RCSB PDB 1AON](https://www.rcsb.org/structure/1AON), [EigenVista inspection reference](https://uvar-apps.github.io/eigenvista/reference-inspection.html).
 

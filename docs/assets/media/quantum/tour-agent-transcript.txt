@@ -1,0 +1,22 @@
+Quantum chemistry with the EigenVista connector
+
+Connect to the released window
+Connect your external agent to a released EigenVista window using the setup instructions. Give it the session note and ask it to protect unsaved work. Open the supplied water calculation in the approved input folder. Check the three atoms and twenty-four imported orbitals before choosing a field.
+
+Identify the HOMO from metadata
+Ask the agent to read the energies and occupations in the source. For this closed-shell example, the highest occupied orbital is MO five and the lowest zero-occupation orbital is MO six. Use the returned field identity in the subsequent requests.
+
+Review a preview before generating meshes
+Ask for the sampled raycast preview and then the volume preview at sixty-four samples per axis. Keep the same camera and field. After each change, have the agent read back the display state. These sampled views let you decide whether to calculate a persistent mesh.
+
+Publish the signed orbital figure
+Generate the signed pair at plus and minus zero point zero three. Ask the agent to wait for success, report the two mesh counts, and verify the exported PNG includes the signed field key. If a calculation needs to stop, identify that job specifically and confirm the prior completed result is still available.
+
+Verify the numerical profile
+Request a distance monitor for the oxygen and first hydrogen, then sample the same orbital along that segment. Check that the sixty-five rows include both endpoints. Compare the measured bond and profile length, and read the status and scalar unit columns before using the table elsewhere.
+
+Inspect a different surface finish
+After saving the orbital result, use a fresh copy to compare an electron-density shell and a solvent-accessible surface. Ask the agent to apply a clipping shader to an identified shell and return the exact parameter values with the figure.
+
+Keep reusable figures, tables and settings
+Ask the agent to check that every output opens from the results folder. Keep the PNG and tables with the original calculation, the camera and shader settings, and the native file. For batch conversion, use the bundled converter and verify each converted file separately.

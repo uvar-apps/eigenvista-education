@@ -2,6 +2,15 @@
 
 Ask your agent to generate and export a density surface colored by the electrostatic potential of all-electron salicylic acid. Use EigenVista 0.10.6 and run the prompts in sequence. [Set up EigenVista](../../setup.md) · [Quantum agent tour](../agent.md) · [GUI version](electrostatic-potential-gui.md)
 
+<figure class="tutorial-media">
+  <video controls playsinline preload="none" width="1600" height="900" poster="../../../assets/media/quantum/salicylic-acid-esp.webp" data-kind="workflow" aria-label="Electrostatic potential workflow video">
+    <source src="../../../assets/media/quantum/electrostatic-potential.mp4" type="video/mp4">
+    <track kind="captions" src="../../../assets/media/quantum/electrostatic-potential.vtt" srclang="en" label="English" default>
+    <track kind="chapters" src="../../../assets/media/quantum/electrostatic-potential-chapters.vtt" srclang="en" label="Chapters">
+  </video>
+  <figcaption>The AI connector chapter shows how the requested density level and potential range appear in the finished figure.</figcaption>
+</figure>
+
 ## Inspect the source and generate the map
 
 ```text
@@ -39,5 +48,11 @@ both quantities, and the camera and shader values needed for a repeat export.
 ```
 
 The figure should show a **−0.130 to +0.130 hartree/e** scale. The position and target reproduce the published orientation. The viewport determines framing and PNG dimensions. Connector readback uses `surfaces.generate` with `electrostaticPotential: true`, `surfaces.set_potential_appearance`, and `shader.apply` with `surface-phong-vertex-color` when the connected version advertises these operations. [Connector reference](https://uvar-apps.github.io/eigenvista/downloads/eigenvista-control/reference.md)
+
+### Worked results
+
+[![Native connector PNG of the salicylic acid shell colored by potential with the quantitative scale below](../../assets/media/quantum/salicylic-acid-esp.webp)](../../assets/media/quantum/results/salicylic-acid-esp.png)
+
+The export shows the framework through the translucent Phong finish and labels the fixed ±0.130 hartree/e potential scale. [Download the mapped PNG](../../assets/media/quantum/results/salicylic-acid-esp.png){ download }.
 
 Try a second export after asking the agent to change only the color range to **±0.200 hartree/e**. Ask it to confirm the triangle count and camera match the first result. The same surface samples will occupy less of the wider scale, so use a fixed range for comparisons across molecules. [Potential mapping reference](https://uvar-apps.github.io/eigenvista/reference-fields.html)

@@ -34,6 +34,8 @@ python -m mkdocs serve
 Open the URL printed by MkDocs. The build writes `site/`, which can be served as
 static files. See [AGENTS.md](AGENTS.md) for authoring conventions and
 [PROGRESS.md](PROGRESS.md) for release coverage and delivery evidence.
+See [the media build guide](tools/media/README.md) to reproduce the videos,
+captions, and concept animations.
 
 ## GitHub Pages
 

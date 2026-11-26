@@ -1,0 +1,6 @@
+id,label,kind,atoms,value,unit,status,reason
+"equatorial","Equatorial Ti–O",distance,"0 1",1.95,angstrom,defined,""
+"axial","Axial Ti–O",distance,"0 5",2.1,angstrom,defined,""
+"equatorial-axial","Equatorial–axial O–Ti–O",angle,"1 0 5",90,degree,defined,""
+"opposite","Opposite axial O–Ti–O",angle,"5 0 6",180,degree,defined,""
+"torsion","Example O–Ti–O–O torsion",torsion,"1 0 3 5",-90,degree,defined,""

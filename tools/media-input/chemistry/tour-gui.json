@@ -1,0 +1,59 @@
+{
+  "title": "Chemistry and biomolecules in the GUI",
+  "kind": "tour",
+  "scenes": [
+    {
+      "mode": "GUI",
+      "title": "Take a first measurement",
+      "caption": "Open water.xyz. Select the oxygen and one hydrogen in order.",
+      "image": "docs/assets/media/chemistry/stills/water-distance.webp",
+      "seconds": 10,
+      "video": "tools/media-input/chemistry/captures/water-gui.webm",
+      "narration": "Start with the packaged water X Y Z file. In Molecular data, check for three atoms and two display bonds. In Selections and measurements, select the first two atoms and use Geometry measurements to add an oxygen to hydrogen distance."
+    },
+    {
+      "mode": "GUI",
+      "title": "Read the geometry table",
+      "caption": "The O–H distance is about 0.957 Å. The H–O–H angle is about 104.46°.",
+      "image": "docs/assets/media/chemistry/stills/water-angle.webp",
+      "seconds": 12,
+      "narration": "Select hydrogen, oxygen, hydrogen in that order and add an angle. Oxygen is the vertex. The distance is about zero point nine five seven angstroms. The angle is about one hundred four point four six degrees. Export the measurement table and a figure to document the result."
+    },
+    {
+      "mode": "GUI",
+      "title": "Inspect the deposited assembly",
+      "caption": "Protein cartoon turns assigned strands into arrows. Chain and Entity color different biological groups.",
+      "image": "docs/assets/media/chemistry/stills/assembly-chain.webp",
+      "seconds": 13,
+      "video": "tools/media-input/chemistry/captures/assembly-gui.webm",
+      "narration": "Open the one A O N structure and switch to protein cartoon. Select chain coloring to distinguish deposited copies. Switch to entity coloring to group copies that share an entity. Use the chain controls to isolate and frame a copy, or the component controls to show ligands as ball and stick.",
+      "videoStart": 0.75
+    },
+    {
+      "mode": "GUI",
+      "title": "Locate a ligand by identity",
+      "caption": "Choose ADP author chain A, residue 1, before sending a 4 Å neighborhood search.",
+      "image": "docs/assets/media/chemistry/stills/ligand-residue-controls.webp",
+      "seconds": 12,
+      "video": "tools/media-input/chemistry/captures/ligand-gui.webm",
+      "narration": "Open ligands and neighborhoods to find a specific copy. Here A D P chain A residue one is the deposited author identity. Start each four angstrom search from that one ligand. The second search includes full residues, so it shows more of the local context.",
+      "videoStart": 0.75
+    },
+    {
+      "mode": "GUI",
+      "title": "Generate a molecular surface",
+      "caption": "Use all three source atoms, Bondi / Mantina radii, a 1.4 Å probe, and 0.25 Å grid spacing.",
+      "image": "docs/assets/media/chemistry/stills/water-surface-controls.webp",
+      "seconds": 13,
+      "narration": "Back in water, open Molecular surfaces. Build an excluded surface from all three atoms. Use Bondi Mantina radii, a one point four angstrom probe, and a quarter angstrom grid. Compare the settings before generating the accessible surface. Save both so you can switch views without recalculating."
+    },
+    {
+      "mode": "GUI",
+      "title": "Keep the scientific outputs",
+      "caption": "Use the viewport export for the PNG, the measurement panel for CSV, and Save for a native project.",
+      "image": "docs/assets/media/chemistry/results/1aon-adp-a1.png",
+      "seconds": 12,
+      "narration": "Finish with an image that shows the result, a measurement table with units, and a native file for future editing. This one A O N figure records the local contact as a geometric distance. Keep its source identifiers and view settings with the figure."
+    }
+  ]
+}

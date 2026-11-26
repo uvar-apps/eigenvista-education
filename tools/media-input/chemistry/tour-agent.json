@@ -1,0 +1,62 @@
+{
+  "title": "Chemistry and biomolecules with the AI connector",
+  "kind": "tour",
+  "scenes": [
+    {
+      "mode": "AI connector",
+      "title": "Start from the approved session",
+      "caption": "Give the agent your session note path. Ask it to verify connectivity and preserve existing work.",
+      "image": "docs/assets/media/chemistry/stills/water-distance.webp",
+      "seconds": 12,
+      "narration": "Start the authorized EigenVista app session and give your coding agent the session note path. Tell it to check the version and capabilities, preserve any open work, and use approved input and result folders. The private connection descriptor stays on your machine.",
+      "prompt": "Use my session note and the packaged connector guide. Verify the version and preserve any open work."
+    },
+    {
+      "mode": "AI connector",
+      "title": "Measure and verify water",
+      "caption": "Read the measured values from the app, then export the figure and data.",
+      "image": "docs/assets/media/chemistry/stills/water-angle.webp",
+      "seconds": 13,
+      "narration": "Ask the agent to open water and resolve the oxygen and hydrogen identities. Have it add one bond distance and the angle with oxygen in the middle. Ask for the accepted values and units. The app table provides the check before the agent exports a figure and C S V.",
+      "prompt": "Measure the first O–H distance and the H–O–H angle. Export an annotated PNG and measurement CSV."
+    },
+    {
+      "mode": "AI connector",
+      "title": "Change how the assembly is grouped",
+      "caption": "Use deposited chain and entity identities to define the comparison.",
+      "image": "docs/assets/media/chemistry/stills/assembly-entity.webp",
+      "seconds": 14,
+      "narration": "Tell the agent to open the one A O N deposit. Ask it to verify the reported atom and chain counts, then make chain and entity colored cartoons using the same camera. Chain colors mark separate deposited copies. Entity colors group copies from the same deposited entity.",
+      "prompt": "Use identical cameras for chain-colored and entity-colored cartoons. Report the imported atom and chain counts."
+    },
+    {
+      "mode": "AI connector",
+      "title": "Resolve the ligand before searching",
+      "caption": "Query ADP author A:1, label W, with a stable four-angstrom cutoff.",
+      "image": "docs/assets/media/chemistry/stills/ligand-residue-controls.webp",
+      "seconds": 13,
+      "video": "tools/media-input/chemistry/captures/ligand-ai.webm",
+      "narration": "Give the agent the complete ligand identity, including its author and label chain. Ask it to use the same seed atoms on both neighborhood runs. Read the accepted counts before interpreting the difference between atom centers and complete residues.",
+      "prompt": "Resolve ADP author A:1, label chain W. Compare the two 4 Å neighborhoods from the same seeds.",
+      "videoStart": 0.75
+    },
+    {
+      "mode": "AI connector",
+      "title": "Compare two calculations",
+      "caption": "Generate SES and SAS at identical radii, probe, and spacing. Check both triangle counts.",
+      "image": "docs/assets/media/chemistry/stills/water-surface-controls.webp",
+      "seconds": 14,
+      "narration": "Ask for excluded and accessible water surfaces using identical radii, probe, and grid spacing. Tell the agent to wait for both jobs, check the saved mesh kinds and triangle counts, and export each at the same camera. It can then try rendering presets while keeping the calculation parameters fixed.",
+      "prompt": "Use a 1.4 Å probe and 0.25 Å spacing. Wait for both meshes. Export matched PNGs."
+    },
+    {
+      "mode": "AI connector",
+      "title": "Keep inspectable evidence",
+      "caption": "Ask for the measured values, source identities, PNG, CSV, and native project.",
+      "image": "docs/assets/media/chemistry/results/1aon-adp-a1.png",
+      "seconds": 12,
+      "narration": "Request the figure and measurement table alongside the native project. For the ligand example, read back the two deposited atom identities and the two point five four six angstrom contact. Open the files before sharing them and record the choices that affect what the image shows.",
+      "prompt": "Return the PNG and CSV with the units, source identities, and accepted values."
+    }
+  ]
+}

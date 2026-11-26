@@ -1,0 +1,85 @@
+{
+  "title": "Quantum chemistry in the EigenVista GUI",
+  "kind": "tour",
+  "scenes": [
+    {
+      "mode": "GUI",
+      "title": "Start with calculated water",
+      "caption": "Open water.molden and check the imported atoms and orbitals.",
+      "image": "docs/assets/media/quantum/water-import-workspace.webp",
+      "seconds": 15,
+      "narration": "Open the supplied Molden file for water and check Molecular data. It contains three atoms, twenty-four basis functions, and twenty-four spatial orbitals. Open Provenance when you need to record how EigenVista interpreted the imported calculation."
+    },
+    {
+      "mode": "GUI",
+      "title": "Read occupation before choosing a field",
+      "caption": "MO 5 is occupied. MO 6 is the first zero-occupation orbital by energy.",
+      "image": "docs/assets/media/quantum/water-orbital-metadata.webp",
+      "seconds": 15,
+      "narration": "Under Quantum fields, browse the orbitals. Compare the occupation and energy columns. Orbital five is the highest occupied orbital and orbital six is the lowest unoccupied orbital. Choose orbital five for the rest of this exercise.",
+      "video": "tools/media-input/quantum/captures/water-orbitals.webm"
+    },
+    {
+      "mode": "GUI",
+      "title": "Compare the preview modes",
+      "caption": "Use sampled raycast or volume preview. Set the grid separately from ray sampling quality.",
+      "image": "docs/assets/media/quantum/water-raycast-workspace.webp",
+      "seconds": 15,
+      "narration": "In Field rendering, set the isovalue magnitude to zero point zero three and the grid to sixty-four samples along each axis. Compare the sampled raycast and volume previews. Grid resolution controls the spatial samples, while the sampling quality control changes the display rays.",
+      "video": "tools/media-input/quantum/captures/water-preview.webm"
+    },
+    {
+      "mode": "GUI",
+      "title": "Generate and inspect both signs",
+      "caption": "Read the two signed levels and units in the field key before exporting a figure.",
+      "image": "docs/assets/media/quantum/water-signed-meshes.webp",
+      "seconds": 17,
+      "narration": "Generate the two signed meshes and wait for them to finish. Enable the field rendering key before you export. It tells you which orbital the colors describe, the two signed levels, and the amplitude unit.",
+      "video": "tools/media-input/quantum/captures/water-meshes.webm"
+    },
+    {
+      "mode": "GUI",
+      "title": "Cancel a replacement calculation",
+      "caption": "The viewport shows calculation progress. Cancel the new job and check the four existing frontier meshes.",
+      "image": "docs/assets/media/quantum/frontier-cancel-progress.webp",
+      "video": "tools/media-input/quantum/captures/frontier-cancel.webm",
+      "seconds": 16,
+      "narration": "Here is a longer calculation on the bicyclic example. We start a finer replacement so there is time to see the phase and elapsed time. Cancel this calculation while it runs, then check Saved surfaces. The four finished meshes from the previous calculation are still available."
+    },
+    {
+      "mode": "GUI",
+      "title": "Measure and export the bond profile",
+      "caption": "Use selected atoms 1 and 2 for a 65-sample line profile. Export CSV.",
+      "image": "docs/assets/media/quantum/water-profile-workspace.webp",
+      "seconds": 18,
+      "narration": "Select the oxygen and first hydrogen in that order. Measure the bond, then use those same atoms as the endpoints of a sixty-five-sample line profile on orbital five. The segment is about zero point nine five eight angstroms long. Export the sample table with scalar values in bohr to the negative three halves.",
+      "video": "tools/media-input/quantum/captures/water-profile.webm"
+    },
+    {
+      "mode": "GUI",
+      "title": "Compare density and coordinate-derived shape",
+      "caption": "Compare the total density shell with a solvent-accessible surface.",
+      "image": "docs/assets/media/quantum/water-sas-workspace.webp",
+      "seconds": 15,
+      "narration": "Generate the total electron density shell at zero point zero five electrons per cubic bohr. Then build a solvent-accessible surface with a one point four angstrom probe. Compare the outlines. One surface is computed from the electronic field and the other from atom positions and radii."
+    },
+    {
+      "mode": "GUI",
+      "title": "Clip the shell and retain export settings",
+      "caption": "A clipping shader reveals the framework. Export the view with a record of the parameters.",
+      "image": "docs/assets/media/quantum/water-clipping-workspace.webp",
+      "seconds": 18,
+      "narration": "Choose Surface shader under Appearance and load the clipping files. Apply the shader to the density shell. Adjust the x maximum uniform to reveal the framework. Save the shader parameters with the figure when you need to reproduce the visible cutaway.",
+      "video": "tools/media-input/quantum/captures/water-clipping.webm"
+    },
+    {
+      "mode": "GUI",
+      "title": "Convert inputs without replacing the scene",
+      "caption": "Review each converted row and use its Save action.",
+      "image": "docs/assets/media/quantum/water-conversion-queue.webp",
+      "seconds": 18,
+      "narration": "Finally, open Convert files and add the Molden and cube examples. Run the batch, check the outcome for each row, then use Save on the converted rows you want to keep. For the scientific record, retain the original calculation, the exported image and tables, and the native document.",
+      "video": "tools/media-input/quantum/captures/water-conversion.webm"
+    }
+  ]
+}

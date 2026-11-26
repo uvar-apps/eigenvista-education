@@ -1,0 +1,19 @@
+Chemistry and biomolecules with the AI connector
+
+Start from the approved session
+Start the authorized EigenVista app session and give your coding agent the session note path. Tell it to check the version and capabilities, preserve any open work, and use approved input and result folders. The private connection descriptor stays on your machine.
+
+Measure and verify water
+Ask the agent to open water and resolve the oxygen and hydrogen identities. Have it add one bond distance and the angle with oxygen in the middle. Ask for the accepted values and units. The app table provides the check before the agent exports a figure and C S V.
+
+Change how the assembly is grouped
+Tell the agent to open the one A O N deposit. Ask it to verify the reported atom and chain counts, then make chain and entity colored cartoons using the same camera. Chain colors mark separate deposited copies. Entity colors group copies from the same deposited entity.
+
+Resolve the ligand before searching
+Give the agent the complete ligand identity, including its author and label chain. Ask it to use the same seed atoms on both neighborhood runs. Read the accepted counts before interpreting the difference between atom centers and complete residues.
+
+Compare two calculations
+Ask for excluded and accessible water surfaces using identical radii, probe, and grid spacing. Tell the agent to wait for both jobs, check the saved mesh kinds and triangle counts, and export each at the same camera. It can then try rendering presets while keeping the calculation parameters fixed.
+
+Keep inspectable evidence
+Request the figure and measurement table alongside the native project. For the ligand example, read back the two deposited atom identities and the two point five four six angstrom contact. Open the files before sharing them and record the choices that affect what the image shows.
