@@ -39,3 +39,12 @@ guide](docs/setup.md). The local TiO₆ example is an idealized educational inpu
   neighborhood counts, and the TiO₆ geometry.
 - The GitHub Actions workflow builds the Markdown site, uploads only `site/`
   and deploys it from `main`.
+
+### Publication
+
+- GitHub Pages is configured to publish through GitHub Actions. The build and
+  deploy jobs passed for `0c3e9bd1a18d4998c313422d8234060248c9ab3e`.
+  [Deployment 45786724301](https://github.com/uvar-apps/eigenvista-education/actions/runs/45786724301).
+- Anonymous HTTPS checks matched all 73 built files, covering 22 content routes
+  (including all 20 tutorials), the fixture download, search index, and the
+  custom 404. [Live education site](https://uvar-apps.github.io/eigenvista-education/).
