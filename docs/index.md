@@ -90,4 +90,8 @@ Each workflow supplies an input, a sequence to follow, and a result to check. Ch
 
 The lessons use EigenVista 0.10.6. For file-format profiles and the full control reference, see the [EigenVista manual](https://uvar-apps.github.io/eigenvista/reference.html), [AI connector guide](https://uvar-apps.github.io/eigenvista/ai-guide.html), and [release notes](https://github.com/uvar-apps/eigenvista/releases/tag/v0.10.6).
 
-The salicylic acid figure is reproduced from EigenVista. [Capture provenance](https://uvar-apps.github.io/eigenvista/assets/media/provenance.json) · [Upstream license](assets/eigenvista-license.txt).
+## License
+
+The original tutorials and teaching examples are available under **Creative Commons Attribution 4.0 International**. When reusing a lesson, credit **EigenVista Education**, link to the original and the license, and indicate changes. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+
+Credited upstream figures and linked datasets carry their source terms. The salicylic acid figure is distributed with the EigenVista GPL-2.0-or-later notice. [Capture provenance](https://uvar-apps.github.io/eigenvista/assets/media/provenance.json) · [Upstream license](assets/eigenvista-license.txt).

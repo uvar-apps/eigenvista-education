@@ -48,3 +48,9 @@ guide](docs/setup.md). The local TiO₆ example is an idealized educational inpu
 - Anonymous HTTPS checks matched all 73 built files, covering 22 content routes
   (including all 20 tutorials), the fixture download, search index, and the
   custom 404. [Live education site](https://uvar-apps.github.io/eigenvista-education/).
+
+### Educational material license
+
+- Applied CC BY 4.0 to the original tutorials and teaching examples. Added
+  the legal text to [LICENSE](LICENSE), attribution guidance to the README and
+  homepage, and a license link to the site footer.

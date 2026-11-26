@@ -8,6 +8,17 @@ connector.
 [Open the education site](https://uvar-apps.github.io/eigenvista-education/) ·
 [EigenVista application and reference](https://uvar-apps.github.io/eigenvista/)
 
+## License
+
+The original tutorials and teaching examples are available under
+[Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/).
+For attribution, credit **EigenVista Education**, link to the original material
+and the license, and indicate changes. See [LICENSE](LICENSE) for the legal text.
+
+Credited upstream figures and linked datasets carry their source terms. The
+salicylic acid figure is distributed with the
+[upstream EigenVista notice](docs/assets/eigenvista-license.txt).
+
 ## Preview locally
 
 From the repository root, use Python 3.13 to match CI.
