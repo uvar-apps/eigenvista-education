@@ -1,0 +1,8 @@
+# Generated documentation and local tooling
+/site/
+/.venv/
+/.serena/
+/.unlazy/
+/.pytest_cache/
+__pycache__/
+.DS_Store

@@ -1,0 +1,93 @@
+site_name: EigenVista Education
+site_description: Guided molecular visualization tutorials for researchers using EigenVista.
+site_url: https://uvar-apps.github.io/eigenvista-education/
+strict: true
+
+theme:
+  name: material
+  font: false
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - content.code.copy
+    - navigation.footer
+    - navigation.sections
+    - navigation.tabs
+    - search.highlight
+
+extra_css:
+  - assets/education.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/uvar-apps/eigenvista-education
+      name: Education site source on GitHub
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - tables
+  - toc:
+      permalink: true
+
+validation:
+  nav:
+    omitted_files: warn
+    not_found: warn
+  links:
+    not_found: warn
+    anchors: warn
+    unrecognized_links: warn
+
+nav:
+  - Home: index.md
+  - Set up EigenVista: setup.md
+  - Quantum chemistry:
+      - Start here:
+          - GUI tour: quantum/gui.md
+          - AI connector tour: quantum/agent.md
+      - Frontier orbitals:
+          - GUI: quantum/workflows/frontier-orbitals-gui.md
+          - AI connector: quantum/workflows/frontier-orbitals-agent.md
+      - Quantitative cube fields:
+          - GUI: quantum/workflows/quantitative-cube-gui.md
+          - AI connector: quantum/workflows/quantitative-cube-agent.md
+      - Electrostatic potential:
+          - GUI: quantum/workflows/electrostatic-potential-gui.md
+          - AI connector: quantum/workflows/electrostatic-potential-agent.md
+      - Molecular geometry:
+          - GUI: quantum/workflows/geometry-gui.md
+          - AI connector: quantum/workflows/geometry-agent.md
+  - Chemistry and biomolecules:
+      - Start here:
+          - GUI tour: chemistry/gui.md
+          - AI connector tour: chemistry/agent.md
+      - Protein fold and residue coloring:
+          - GUI: chemistry/workflows/protein-cartoon-gui.md
+          - AI connector: chemistry/workflows/protein-cartoon-agent.md
+      - Ligand neighborhoods:
+          - GUI: chemistry/workflows/ligand-neighborhood-gui.md
+          - AI connector: chemistry/workflows/ligand-neighborhood-agent.md
+      - Compare SES and SAS:
+          - GUI: chemistry/workflows/solvent-surfaces-gui.md
+          - AI connector: chemistry/workflows/solvent-surfaces-agent.md
+      - Local coordination geometry:
+          - GUI: chemistry/workflows/coordination-geometry-gui.md
+          - AI connector: chemistry/workflows/coordination-geometry-agent.md
