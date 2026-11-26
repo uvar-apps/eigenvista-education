@@ -73,3 +73,9 @@ guide](docs/setup.md). The local TiO₆ example is an idealized educational inpu
 - Staging passed all 132 Chromium and WebKit route and viewport checks,
   including play, pause, seek, caption loading, chapter controls, result
   downloads, transcripts, and search.
+- Published revision `6d07fb7b3efb70b47b643d0204b3a8395f9dfb9f` through
+  [Pages deployment 45794005033](https://github.com/uvar-apps/eigenvista-education/actions/runs/45794005033).
+  Anonymous HTTPS readback matched all 188 built files. Both browsers checked
+  all 22 live routes at 1440, 390, and 320 pixels and loaded the captions,
+  chapters, transcripts, and downloads. All 16 unique videos played, paused,
+  and sought on the public site.
